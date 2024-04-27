@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Catalogo de Productos</title>
+</head>
+<body>
+    <h1>Catalogo de Productos</h1>
+
+    <a href="/cp">Productos</a> 
+    <a href="/cu">Usuarios</a> 
+    <a href="/cc">Clientes</a>
+
+    <table border="1">
+        <tr><th>Codigo del Producto</th><th>Nombre del Producto</th><th>Precio del Producto</th></tr>
+        <% productos.forEach(producto => { %> 
+            <tr><td><%= producto.codigo %></td><td><%= producto.Nombre %></td><td>$<%= producto.Precio %></td></tr>
+        <% }); %>
+    </table>
+
+</body>
+</html>
